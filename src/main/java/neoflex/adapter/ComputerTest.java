@@ -2,7 +2,7 @@ package neoflex.adapter;
 
 public class ComputerTest {
     public static void main(String[] args) {
-        UsbFlesh usbFlesh = new UsbFlesh();
+        Usb usbFlesh = new Usb();
         Computer computer = new Computer();
         computer.read(usbFlesh);
         System.out.println();

@@ -1,6 +1,17 @@
 package neoflex.singleton;
 
 public class Person {
+
+
+    private String name;
+    private int age;
+    private double height;
+
+    public Person(String name, int age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
     public String getName() {
         return name;
     }
@@ -13,14 +24,15 @@ public class Person {
         return height;
     }
 
-    private String name;
-    private int age;
-    private double height;
-
-    public Person(String name, int age, double height) {
+    public void setName(String name) {
         this.name = name;
-        this.age = age;
-        this.height = height;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
 }
